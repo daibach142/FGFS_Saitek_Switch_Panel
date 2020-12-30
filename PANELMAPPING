@@ -1,0 +1,38 @@
+Format of Panel Mapping Files
+=============================
+
+These are simple XML files, for example, part of cessna.xml is:
+
+<plane name="Cessna 172P">
+	<switch name="BATTERY">controls/switches/master-bat</switch>
+	<switch name="ALT"> controls/switches/master-alt</switch>
+	<switch name="AVIONICS">controls/switches/master-avionics    </switch>
+	...
+	...
+	<switch name="LANDING">
+		controls/lighting/landing-light
+	</switch>
+
+	<gear-retarget>controls/engines/engine/primer-lever</gear-retarget>
+
+	<magnetos>controls/switches/magnetos</magnetos>
+
+	<starter>controls/switches/starter</starter>
+
+</plane>
+
+
+You should define ALL the <switch name= ..>, preferably in the order given in the existing
+files.
+
+If you wish to use the landing gear raise/lower lever to operate a switch 
+(code is not written yet to monitor the simulator's gear state), use the <gear-retarget>.
+
+The <magentos> and <starter> are not likely to require modification.	
+
+Place your new XML file in the 'Generators' directory. The './configure' command will
+now show it as a candidate for selection to make the source file 'src/SwitchPanel.h'.
+A file 'SwitchPanel.html' is also produced in the 'src' directory, containing the XML data
+in a tabulated format for checking and reference.
+
+

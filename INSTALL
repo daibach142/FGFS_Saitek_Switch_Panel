@@ -1,0 +1,24 @@
+INSTALLATION
+============
+
+Requirements: gcc compiler, xsltproc and optionally, libudev & libudev1-dev
+
+If installing without libudev, determine the device address of the Switch Panel, it's
+probably /dev/hidraw2.
+
+Type:
+	./configure
+	make
+	sudo make install
+
+Configuration options allow to choose the aircraft for the panel, 
+libudev or not (specify the device if not), 
+and the IP address of the simulator (typically 127.0.0.1 for same machine).
+
+If the Switch Panel is plugged in, disconnect and reconnect it to change the access
+permissions.
+
+The driver can then be started with the command 'StartSwitchPanel'
+
+
+
