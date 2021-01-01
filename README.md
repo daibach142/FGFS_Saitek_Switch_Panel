@@ -1,8 +1,7 @@
 DRIVER FOR SAITEK SWITCH PANEL
 ==============================
 
-The driver is provided for Linux, (with or without libudev). The next release
-will contain the Raspberry Pi variant, also.
+The driver is provided for Linux, (with or without libudev). This contains the Raspberry Pi variant, also.
    
 To install this driver, follow the instructions in INSTALL; to run, see RUNNING.
 

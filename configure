@@ -6,9 +6,9 @@ outFile="StartSwitchPanel"
 prog="/usr/games/SaitekSwitchPanel"
 defaultIP="127.0.0.1"
 cd Generators
-ls *.xml
+ls *.xml | sed 's/\.xml//'
 cd ..
-read -p "Select Aircraft configuration from above (omit the .xml extension): " aircraft
+read -p "Select Aircraft configuration from above: " aircraft
 echo "export AIRCRAFT=$aircraft" >Configparams
 read -p "Do you have 'libudev1' installed (Y/n): " libudev
 shopt -s nocasematch
