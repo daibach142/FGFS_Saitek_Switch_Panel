@@ -17,3 +17,6 @@ I (Dave Attwood dave@attwoods.org.uk) would like to acknowledge and thank Robert
 who inspired, tested and contributed to the development of the Raspberry Pi version.
 
 For problems or issues either enter an issue on Github, or email stksp@attwoods.org.uk.
+
+New improved version for Windows and Linux, with external configuration file, 
+is available here: https://github.com/daibach142/SaitekSwitch
