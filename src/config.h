@@ -8,6 +8,6 @@
 #define PACKAGE_NAME "Saitek Switch Panel Driver"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.1"
+#define PACKAGE_VERSION "1.2"
 
 

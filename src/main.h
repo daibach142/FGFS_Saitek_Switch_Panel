@@ -11,11 +11,15 @@
 #define MAIN_H_
 
 /* #define DEBUG */
-char SwitchDevice[20];
-char Simulator[20];
+// Issue #1: compilation fails
+extern char SwitchDevice[20];
+extern char Simulator[20];
+
+extern unsigned int SwitchInput;	/* Compressed 3 bytes input from Switch Panel */
+
+// Issue # 1: end
 
 #define PORT_OUT	60000
 
-unsigned int SwitchInput;	/* Compressed 3 bytes input from Switch Panel */
 
 #endif /* MAIN_H_ */

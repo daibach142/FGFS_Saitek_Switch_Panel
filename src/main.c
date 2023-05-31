@@ -12,12 +12,20 @@
 #include <getopt.h>
 #include <unistd.h>
 
-#include "main.h"
+
 #include "config.h"
 #include "SimulatorPanel.h"
 
 #include "SwitchFunctions.h"
 #include "SimulatorFunctions.h"
+
+// Issue #1: compilation fails
+char SwitchDevice[20];
+char Simulator[20];
+
+unsigned int SwitchInput;	/* Compressed 3 bytes input from Switch Panel */
+// Issue # 1: end
+
 
 static void processArguments(int argc, char *argv[]);
 static void readInputs(void);
