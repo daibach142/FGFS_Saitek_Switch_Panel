@@ -5,6 +5,10 @@ Note that the Switch Panel software is configured during installation for one
 specific aircraft (Cessna 172 and Piper 28-116 are the current options) and
 is unlikely to work correctly for other aircraft.
 
+copy switch.nas to nasal 
+
+sudo cp Switch.nas /usr/share/games/flightgear/Nasal/Switch.nas
+
 Add the following start option to FlightGear configuration:
 
 	...
